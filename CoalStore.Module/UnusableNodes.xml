@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="CoalStore.Module.BusinessObjects.Area" Caption="Площадка">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="Id" Caption="Идентификатор" />
+        <Member Name="ParentStore" Caption="Склад" />
+        <Member Name="Pickets" Caption="Пикеты" />
+        <Member Name="Title" Caption="Площадка" />
+        <Member Name="Weight" Caption="Вес" />
+      </OwnMembers>
+    </Class>
+    <Class Name="CoalStore.Module.BusinessObjects.Picket" Caption="Пикет">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="Id" Caption="Идентификатор" />
+        <Member Name="Num" Caption="Номер" />
+        <Member Name="ParentArea" Caption="Площадка" />
+        <Member Name="Weight" Caption="Вес" />
+      </OwnMembers>
+    </Class>
+    <Class Name="CoalStore.Module.BusinessObjects.Store" Caption="Склад">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="Areas" Caption="Площадки" />
+        <Member Name="Id" Caption="Идентификатор" />
+        <Member Name="Title" Caption="Название" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

@@ -1,5 +1,26 @@
-﻿<?xml version="1.0" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="CoalStore">
-  <Views>
-  </Views>
+  <BOModel>
+    <Class Name="CoalStore.Module.BusinessObjects.IArea" Caption="Площадки">
+      <OwnMembers>
+        <Member Name="Pickets" Caption="Пикеты" ImmediatePostData="True" />
+        <Member Name="Title" Caption="Название" />
+        <Member Name="Weight" Caption="Вес" />
+      </OwnMembers>
+    </Class>
+    <Class Name="CoalStore.Module.BusinessObjects.IPicket" Caption="Пикеты">
+      <OwnMembers>
+        <Member Name="Num" Caption="Номер" />
+      </OwnMembers>
+    </Class>
+    <Class Name="CoalStore.Module.BusinessObjects.IStore" Caption="Склады">
+      <OwnMembers>
+        <Member Name="Areas" Caption="Площадки" />
+        <Member Name="Title" Caption="Название" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="19.1.7.0" IsNewNode="True" />
+  </SchemaModules>
 </Application>

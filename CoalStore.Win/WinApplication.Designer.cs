@@ -30,6 +30,7 @@
             this.objectsModule = new DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule();
             this.securityModule1 = new DevExpress.ExpressApp.Security.SecurityModule();
             this.sqlConnection1 = new System.Data.SqlClient.SqlConnection();
+            this.coalStoreModule1 = new CoalStore.Module.CoalStoreModule();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // sqlConnection1
@@ -46,6 +47,7 @@
             this.Modules.Add(this.module1);
             this.Modules.Add(this.module2);
             this.Modules.Add(this.objectsModule);
+            this.Modules.Add(this.coalStoreModule1);
             this.Modules.Add(this.module4);
             this.Modules.Add(this.securityModule1);
             this.UseOldTemplates = false;
@@ -64,5 +66,6 @@
         private DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule objectsModule;
         private DevExpress.ExpressApp.Security.SecurityModule securityModule1;
         private System.Data.SqlClient.SqlConnection sqlConnection1;
+        private Module.CoalStoreModule coalStoreModule1;
     }
 }
